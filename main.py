@@ -27,3 +27,6 @@ router_principal = APIRouter()
 registrar_rutas_desde_directorio(router_principal, carpeta_api)
 app.include_router(router_principal)
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=1000)
