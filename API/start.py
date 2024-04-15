@@ -6,7 +6,7 @@ from fastapi import APIRouter
 
 
 router = APIRouter()
-DATA_FOLDER = "UnbelievaBoat-BDFD/Economy"
+DATA_FOLDER = "Economy"
 @router.get("/api/get_start/{server_id}/")
 async def init_server(server_id: str):
     folder_path = f"{DATA_FOLDER}/{server_id}"
